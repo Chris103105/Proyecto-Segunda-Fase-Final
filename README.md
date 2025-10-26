@@ -1,30 +1,36 @@
 # Proyecto-Segunda-Fase-Final
-# Sistema Digital para el Registro y Control de Asistencia Escolar
+#  Sistema Digital para el Registro y Control de Asistencia Escolar
 
 ## Descripción General
-El **Sistema de Asistencia Automatizado** es una aplicación desarrollada en **Java (Swing y JDBC)** bajo el patrón **MVC (Modelo–Vista–Controlador)**.  
-Su objetivo es optimizar el registro y control de asistencia estudiantil, digitalizando completamente el proceso y reemplazando los métodos manuales basados en papel o planillas.  
+El **Sistema de Asistencia Automatizado** es una aplicación web desarrollada en **Java con Spring Boot**, utilizando el patrón **MVC (Modelo–Vista–Controlador)** y la persistencia de datos con **JPA (Java Persistence API)**.  
+Su objetivo es optimizar el proceso de registro y control de asistencia escolar, eliminando el uso de métodos manuales y proporcionando una gestión moderna, precisa y accesible desde cualquier dispositivo conectado.
 
-El sistema permite a los **docentes** registrar asistencias diarias (presente, ausente, llegada tarde) y a los **administradores** gestionar usuarios, alumnos y generar reportes en PDF mediante **JasperReport**.
+El sistema permite a los **docentes** registrar la asistencia diaria y a los **administradores** gestionar usuarios, alumnos y generar reportes en PDF.
 
 ---
 
-## Funcionalidades Principales
--  **Inicio de sesión seguro** con roles: administrador y docente.  
--  **Registro de asistencia** diario (Presente, Ausente, Llegada Tarde).  
--  **Gestión de alumnos y usuarios** (Agregar, Editar, Eliminar).  
+##  Funcionalidades Principales
+-  **Inicio de sesión con roles diferenciados** (Administrador / Docente).  
+-  **Registro diario de asistencia** (Presente, Ausente, Llegada tarde).  
+-  **Gestión completa de alumnos y usuarios** (Agregar, Editar, Eliminar).  
 -  **Búsqueda y filtrado** por alumno, grado, sección o fecha.  
--  **Reportes automáticos** en PDF mediante JasperReport.  
--  **Persistencia de datos** con JDBC y base de datos MySQL.  
--  **Interfaz intuitiva** desarrollada con Swing.
+-  **Generación de reportes automáticos en PDF** con JasperReport.  
+-  **Persistencia de datos** con **JPA** y base de datos **MySQL**.  
+-  **Interfaz web responsiva e intuitiva**, accesible desde cualquier navegador.  
 
 ---
 
 ##  Requisitos del Sistema
--  **Java JDK 17** o superior  
--   **IntelliJ IDEA**
+-  **Java JDK 17 o superior**  
+-  **Spring Boot 3.x**  
+-  **Maven** (gestión de dependencias)  
 -  **MySQL Server 
--  Librerías externas.
+-  **Apache Tomcat (integrado con Spring Boot)**  
+-  Dependencias principales:
+  - `spring-boot-starter-data-jpa`
+  - `spring-boot-starter-thymeleaf` o `spring-boot-starter-web`
+  - `mysql-connector-j`
+  - `jasperreports`
 
 ---
 
@@ -32,4 +38,4 @@ El sistema permite a los **docentes** registrar asistencias diarias (presente, a
 
 ### Clonar el repositorio
 ```bash
-git clone https://github.com/Chris103105/Proyecto-Segunda-Fase-Final
+git clone https://github.com/[tu_usuario]/SistemaAsistenciaEscolar.git
